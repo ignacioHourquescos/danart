@@ -4,6 +4,7 @@ import useMouse from '@react-hook/mouse-position'
 
 const Revealer = ({img, height, width}) =>{
    const ref = React.useRef(null)
+   
    const mouse = useMouse(ref, {
      enterDelay: 100,
      leaveDelay: 100,
@@ -11,17 +12,21 @@ const Revealer = ({img, height, width}) =>{
 
 
       return (
-         // You must provide the ref to the element you're tracking the
-         // mouse position of
          <div className={s.container} ref={ref}>
            <div className={s.spotlight}
-           
-              style={{left:mouse.x, top:mouse.y, background:`url(${img}) 0% 0% no-repeat`, height:height, width:width}}
+              style={{left:mouse.x-150 , top:mouse.y-150, background:`url(${img}) 0% 0% no-repeat fixed`, height:height, width:width}}
             ></div>
-     
+            <div className={s.palette_conatainer}>
+            <div style={{borderRadius:"200px", width:"25px",height:"25px",backgroundColor:`rgba(${mouse.y/4}, 0, ${mouse.x}, ${mouse.x/1000})`}}>           </div>
+            <div style={{borderRadius:"200px", width:"25px",height:"25px",backgroundColor:`rgba(${mouse.y/4}, ${mouse.y}, ${mouse.y}, ${mouse.x/1000})`}}>  </div>
+            <div style={{borderRadius:"200px", width:"25px",height:"25px",backgroundColor:`rgba(${mouse.x/4}, ${mouse.y}, 0, ${mouse.x/1000})`}}>           </div>
+            <div style={{borderRadius:"200px", width:"25px",height:"25px",backgroundColor:`rgba(${mouse.x/4}, ${mouse.x}, 0, ${mouse.x/1000})`}}>           </div>
+            <div style={{borderRadius:"200px", width:"25px",height:"25px",backgroundColor:`rgba(${mouse.y/4}, ${mouse.y}, ${mouse.x}, ${mouse.x/1000})`}}>  </div>
+            <div style={{borderRadius:"200px", width:"25px",height:"25px",backgroundColor:`rgba(${mouse.y/4},0, ${mouse.x}, ${mouse.x/1000})`}}>            </div>
+            <div style={{borderRadius:"200px", width:"25px",height:"25px",backgroundColor:`rgba(${mouse.y/4}, ${mouse.y}, ${mouse.x}, ${mouse.x/1000})`}}>  </div>
+            </div>
+            <h1>{mouse.y}</h1>
          </div>
-
-
    )
 }
 

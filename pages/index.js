@@ -25,14 +25,13 @@ const Component = (props) => {
    ""
    :
    <div className={s.container}>
-      <Revealer img={'/prueba1.png'} height={`${bubbleSizes}px`} width={`${bubbleSizes}px`}/>
+      {/* <Revealer img={'/cuadro2.png'} height={`${bubbleSizes}px`} width={`${bubbleSizes}px`}/> */}
+      <Revealer img={'/cuadro1.png'} height="300px" width="300px"/>
       <Revealer img={'/prueba2.png'} height="100px" width="100px"/>
       <Revealer img={'/prueba3.png'} height="100px" width="100px"/>
       <Revealer img={'/prueba4.png'} height="100px" width="100px"/>
       <Revealer img={'/prueba5.png'} height="100px" width="100px"/>
-      <Revealer img={'/prueba1.png'} height="100px" width="100px"/>
-      <Revealer img={'/prueba2.png'} height="100px" width="100px"/>
-      <Revealer img={'/prueba3.png'} height="100px" width="100px"/>
+     
    </div>
    }
 
