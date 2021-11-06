@@ -1,0 +1,48 @@
+.container{
+   position: relative;
+  height:25vh;
+  width:25vw;
+  background: #000000;
+//   background: white;
+  
+  text-align: center;
+//   margin:2rem;
+  padding:0rem;
+  border:2px solid rgb(52, 207, 21);
+}
+
+.spotlight {
+   position: absolute;
+   border:1px solid rgb(255, 0, 0);
+   top:0;
+   left:0;
+   // height: 100px;
+   // width: 100px;
+   background-color: rgba(253, 25, 25, 0.452);
+   border-radius:00px;
+   // background: url('/cuadro2.png') 0% 0% no-repeat fixed;
+   background-size: cover;
+   cursor: none; 
+   background-attachment: fixed;
+//    background-image: radial(
+//        circle,
+//        transparent 160px,
+//        rgba(0, 0, 0, 0.85) 200px
+//    );
+// }
+}
+
+
+// .magic {
+//    z-index: 5;
+//    position: absolute;
+//    top:0% ;
+//    left: 0% ;
+//    height:0%;
+//    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/hover-reveal.jpg') 0 0  no-repeat fixed;
+//    background-size: contain;
+//    border-radius:200px;
+
+//    }
+
+   
