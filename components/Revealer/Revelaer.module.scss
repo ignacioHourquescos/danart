@@ -1,4 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+
+
 .container{
+ 
    position: relative;
   height:100vh;
   width:100vw;
@@ -10,6 +16,19 @@
   padding:0rem;
 //   border:2px solid rgb(52, 207, 21);
   background-attachment: fixed;
+
+
+
+
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+
+
+
 }
 
 .spotlight {
@@ -22,6 +41,7 @@
    background-size: cover;
    cursor: none; 
    margin:auto;
+   z-index: 500;
   
 }
 
@@ -31,4 +51,14 @@
    position:fixed;
    top:0;
    left:0;
+}
+
+.main_title{
+  cursor: none;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem;
+  color:rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }

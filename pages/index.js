@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Revealer from '../components/Revealer/Revealer';
 import React, { useState, useEffect,useRef } from 'react';
 import s from './index.module.scss'
+import SeriesHome from '../components/SeriesHome/SeriesHome';
 
 
 
@@ -27,13 +28,11 @@ const Component = (props) => {
    <div className={s.container}>
       {/* <Revealer img={'/cuadro2.png'} height={`${bubbleSizes}px`} width={`${bubbleSizes}px`}/> */}
       <Revealer img={'/cuadro1.png'} height="300px" width="300px"/>
-      <Revealer img={'/prueba2.png'} height="100px" width="100px"/>
-      <Revealer img={'/prueba3.png'} height="100px" width="100px"/>
-      <Revealer img={'/prueba4.png'} height="100px" width="100px"/>
-      <Revealer img={'/prueba5.png'} height="100px" width="100px"/>
+      
      
    </div>
    }
+   <SeriesHome />
 
   </>)
 }
